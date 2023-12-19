@@ -1,0 +1,80 @@
+body{
+    background-image: url(https://images.summitmedia-digital.com/yummyph/images/2021/07/23/lumpiangshanghai.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-style: italic;
+}
+header {
+    background-color: #ff95316c;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    box-shadow: 0 0 25px 0 black;
+	left: 0;  
+}
+header * {
+    display: inline;
+}
+.k{
+    margin-left: 1250px;
+}
+button{
+	width: 100px;
+	height: 40px;
+	color: #ffffff;
+	background: #ee9d08a1;
+	font-size: 1em;
+	font-weight: bold;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+    font-style: italic;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+
+}
+button:hover{
+	background:#ee9d08a1;
+	transform: scale(1.16);
+}
+#login{
+	margin: auto;
+    margin-top: 20px;
+}
+#home{
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 150px;
+}
+#SignUp{
+	margin: auto;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+p{
+	margin: auto;
+    margin-top: 50px;
+    font-style: italic;
+    font-size: 30px;
+    background: #ff95316c;
+    text-align: center;
+}
+
+.howto{
+    margin: auto;
+    background: #ff95316c;
+    width: 40%;
+}
+h1{
+    margin-top: 300px;
+    text-align: center;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Jepoy's Website</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="./login.js"></script> 
+</head>
+<body> 
+    <header>
+    <a href="http://127.0.0.1:5500/home.html" class="back"><button>Back</button></a>
+    </header>
+    <div class="container">
+        <div id="login">
+				<form>
+					<label for="pew" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Enter Email" id="username" required="">
+					<input type="password" name="password1" placeholder="Enter Password" id="password" required="">
+                    <a href=""><h5>Forgot Password?</h5></a>
+                </form>
+                    <button onclick="login()">Login</button>
+                    <h4>Click the "Create Account" to register</h4>
+                <a href="http://127.0.0.1:5500/signup.html#"><button>Create Account</button></a>
+		</div>
+    </div> 
+</body>
+<script>
+    function login(){
+        let email, password;
+        email = document.getElementById("username").value;
+        password = document.getElementById("password").value;
+        
+        let users = new Array();
+        users = JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
+        if(users.some((v)=>{
+            return v.email == email && v.password == password
+        })){
+            alert("Login Successful");
+            let user = users.filter((v)=>{
+                return v.email == email && v.password == password;
+            })[0]
+
+            localStorage.setItem("name", user.name);
+            localStorage.setItem("email", user.email);
+            localStorage.setItem("password", user.password);
+            window.location.href = "http://127.0.0.1:5500/aboutL.html";
+    
+        }
+        else{
+            alert("Login Fail");
+        }
+    }
+
+</script>
+</html>

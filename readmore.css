@@ -1,0 +1,96 @@
+body{
+    background-color: orange; 
+    background-size: cover;   
+    background-repeat: no-repeat;
+    font-style: italic;
+}
+.box{
+    display: flex;
+    text-align: center;
+}
+.taogi{
+    margin: auto;
+    margin-top: 40px;
+    margin-left: 0px;
+    width: 300px;
+    height: 350px;
+    border: solid;
+    border-radius: 10px;
+    background-image: url(fish-lumpia.jpg);
+    background-size: cover;
+}
+.fresh{
+    margin: auto;
+    margin-top: 40px;
+    width: 300px;
+    height: 350px;
+    border: solid;
+    border-radius: 10px;
+    background-image: url(Fresh-Lumpia-Recipe.webp);
+    background-size: cover;
+
+}
+.lumpai{
+    margin: auto;
+    margin-top: 40px;
+    width: 300px;
+    height: 350px;
+    border: solid;
+    border-radius: 10px;
+    background-image: url(Filipino-Lumpia-3-edited-1-scaled.jpg);
+    background-size: cover;
+
+}
+.shanghai{
+    margin: auto;
+    margin-top: 40px;
+    width: 300px;
+    height: 350px;
+    border: solid;
+    border-radius: 10px;
+    background-image: url(Lumpiang-Shanghai.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#container2{
+    border-radius: 10px;
+    border: solid 1px;  
+    box-shadow: blue(20px);
+    background-color: rgba(255, 166, 0, 0.61);
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+button{
+	width: 120px;
+	height: 40px;
+	display: block;
+	color: #ffffff;
+	background: #ff7b00a1;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 10px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+	font-style: italic;
+}
+button:hover{
+	background:#ff7b00a1;
+	transform: scale(1.16);
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+#description{
+    margin: auto;
+    margin-top: 160px;
+    border: solid 1px;
+    border-radius: 10px;
+    background: transparent;
+    background-color: rgba(226, 164, 49, 0.696);
+    width: 90%;
+}
